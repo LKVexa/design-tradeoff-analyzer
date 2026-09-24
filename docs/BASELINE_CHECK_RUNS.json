@@ -1,0 +1,13 @@
+{
+  "schema": "designanalyzer/check_runs/v1",
+  "version": "0.1.1-partial",
+  "executor": "claude cowork session 01SaQzDRzMFXvRabmCC6JDJD",
+  "generated_at": "2026-09-14T00:00:00Z",
+  "runs": [
+    {"check": "baseline unit tests (0.1.0-partial)", "command": "python3 -m unittest discover -s tests -t .", "result": "PASS", "detail": "13 tests OK"},
+    {"check": "defect probes on baseline", "result": "6 findings reproduced (A015-F1..F6)"},
+    {"check": "candidate unit tests (0.1.1-partial, final bytes)", "command": "python3 -m unittest discover -s tests -t .", "result": "PASS", "detail": "21 tests OK"},
+    {"check": "Windows-native launch", "result": "UNRUN", "detail": "no Windows runtime available this session"},
+    {"check": "independent review", "result": "NOT PERFORMED"}
+  ]
+}
